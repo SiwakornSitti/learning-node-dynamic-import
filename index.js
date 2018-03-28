@@ -7,6 +7,6 @@
     } else {
         fns = await import('./libs/subtract')
     }
-    const result = fns(10,8);
-    console.log(result)
+    const result = fns.default(10,8);
+    console.log('Result',result);
 })()
